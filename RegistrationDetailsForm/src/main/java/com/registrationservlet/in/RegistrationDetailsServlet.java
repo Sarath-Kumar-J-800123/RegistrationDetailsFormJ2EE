@@ -138,7 +138,7 @@ public class RegistrationDetailsServlet extends HttpServlet {
 		}
 		else
 		{
-			RequestDispatcher grd = request.getRequestDispatcher("Login.jsp");
+			RequestDispatcher grd = request.getRequestDispatcher("index.jsp");
 			try {
 				grd.forward(request, response);
 			} catch (ServletException | IOException e) {
@@ -151,7 +151,7 @@ public class RegistrationDetailsServlet extends HttpServlet {
 
 	private void getLoginPage(HttpServletRequest request, HttpServletResponse response) {
 		// TODO Auto-generated method stub
-		RequestDispatcher rd = request.getRequestDispatcher("Login.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 		try {
 			rd.forward(request, response);
 		} catch (ServletException | IOException e) {
